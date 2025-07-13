@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <main>
+      <section class="content">
+        <article class="hero">
+          <div class="hero__content">
+            <div class="hero__img">
+              <img src="./images/image-jeremy.png" alt="Jeremy image" />
+            </div>
+            <div class="hero__texts">
+              <span class="report-for">Report for</span>
+              <h1 class="hero__name">Jeremy Robson</h1>
+            </div>
+          </div>
+          <div class="hero__nav">
+            <ul>
+              <li class="timeframe active-tf" data-timeframe="daily">Daily</li>
+              <li class="timeframe" data-timeframe="weekly">Weekly</li>
+              <li class="timeframe" data-timeframe="monthly">Monthly</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__icon orange">
+            <img class="icon" src="./images/icon-work.svg" alt="Work icon" />
+          </div>
+          <div class="card__info_wrapper">
+            <div class="card__content">
+              <div class="card__info">
+                <h2>Work</h2>
+                <span class="more-info"
+                ><img src="./images/icon-ellipsis.svg" alt="More info"
+                /></span>
+              </div>
+              <div class="tfs">
+                
+                <div class="current-tf" data-type="work"></div>
+                <div class="previous-tf" data-previous=""></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__icon blue">
+          <img class="icon" src="./images/icon-play.svg" alt="Play icon" />
+          </div>
+          <div class="card__info_wrapper">
+            <div class="card__content">
+              <div class="card__info">
+                <h2>Play</h2>
+                <span class="more-info"
+                ><img src="./images/icon-ellipsis.svg" alt="More info"
+                /></span>
+              </div>
+              <div class="tfs">
+                
+                <div class="current-tf" data-type="play"></div>
+                <div class="previous-tf" data-previous=""></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__icon pink">
+            <img class="icon" src="./images/icon-study.svg" alt="Study icon" />
+          </div>
+          <div class="card__info_wrapper">
+            <div class="card__content">
+              <div class="card__info">
+                <h2>Study</h2>
+                <span class="more-info"
+                ><img src="./images/icon-ellipsis.svg" alt="More info"
+                /></span>
+              </div>
+              <div class="tfs">
+                
+                <div class="current-tf" data-type="study"></div>
+                <div class="previous-tf" data-previous=""></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__icon green">
+            <img
+              class="icon"
+              src="./images/icon-exercise.svg"
+              alt="Exercise icon"
+            />
+          </div>
+          <div class="card__info_wrapper">
+            <div class="card__content">
+              <div class="card__info">
+                <h2>Exercise</h2>
+                <span class="more-info"
+                ><img src="./images/icon-ellipsis.svg" alt="More info"
+                /></span>
+              </div>
+              <div class="tfs">
+                
+                <div class="current-tf" data-type="exercise"></div>
+                <div class="previous-tf" data-previous=""></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__icon purple">
+            <img
+              class="icon"
+              src="./images/icon-social.svg"
+              alt="Social icon"
+            />
+          </div>
+          <div class="card__info_wrapper">
+            <div class="card__content">
+              <div class="card__info">
+                <h2>Social</h2>
+                <span class="more-info"
+                ><img src="./images/icon-ellipsis.svg" alt="More info"
+                /></span>
+              </div>
+              <div class="tfs">
+                
+                <div class="current-tf" data-type="social"></div>
+                <div class="previous-tf" data-previous=""></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__icon yellow">
+            <img
+              class="icon"
+              src="./images/icon-self-care.svg"
+              alt="Self Care icon"
+            />
+          </div>
+          <div class="card__info_wrapper">
+            <div class="card__content">
+              <div class="card__info">
+                <h2>Self Care</h2>
+                <span class="more-info"
+                ><img src="./images/icon-ellipsis.svg" alt="More info"
+                /></span>
+              </div>
+              <div class="tfs">
+                
+                <div class="current-tf" data-type="self care"></div>
+                <div class="previous-tf" data-previous=""></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="attribution">
+       Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://www.frontendmentor.io/profile/Jayfx24">Jayfx24</a>.
+    </footer>
+    <script src="index.js" defer></script>
+  </body>
+</html>
