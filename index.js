@@ -26,6 +26,11 @@ async function getData(tf) {
 
 function updateUI(timeframe, data) {
   const tf = timeframe.toLowerCase();
+  const tfLabel = {
+    'daily' : 'Yesterday', 
+    'weekly' : 'Last Week', 
+    'monthly' : 'Last Month', 
+  }
   currentTf.forEach((type) => {
     const activity = data.find(
       (item) => item.title.toLowerCase() === type.dataset.type
@@ -34,13 +39,13 @@ function updateUI(timeframe, data) {
     console.log(activity.timeframes[tf]);
 
     type.innerHTML = `${activity.timeframes[tf]["current"]}hrs`;
-    prevTf.innerHTML = `Last Week - ${activity.timeframes[tf]["previous"]}hrs`;
+    prevTf.innerHTML = `${tfLabel[tf]} - ${activity.timeframes[tf]["previous"]}hrs`;
   });
 }
 
 async function init() {
-  const defaultTF = await getData("monthly");
-  updateUI("monthly", defaultTF);
+  const defaultTF = await getData("weekly");
+  updateUI("weekly", defaultTF);
   tfNav.addEventListener("click", handleNav);
 }
 init();
