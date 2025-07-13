@@ -186,7 +186,7 @@ li {
 .card__info_wrapper {
     border-radius: inherit;
     background-color: var(--navy-9-0);
-    margin-top: -2rem;
+    margin-top: -1.85rem;
     flex: 3;
 
 }
@@ -197,7 +197,7 @@ li {
     padding: 2rem;
     display: grid;
     align-content: start;
-    gap: 1.25rem;
+    gap: 1.5rem;
     width: 100%;
     height: 100%;
 }
