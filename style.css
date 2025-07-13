@@ -230,6 +230,8 @@ h2 {
 .current-tf {
     font-size: 3.5rem;
     line-height: 4.125rem;
+    font-weight: var(--fw-300);
+
 }
 
 .report-for,
