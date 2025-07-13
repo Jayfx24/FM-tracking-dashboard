@@ -39,9 +39,9 @@ function updateUI(timeframe, data) {
 }
 
 async function init() {
-  const defaultTF = await getData("daily");
-  updateUI("daily", defaultTF);
+  const defaultTF = await getData("monthly");
+  updateUI("monthly", defaultTF);
+  tfNav.addEventListener("click", handleNav);
 }
 init();
 
-tfNav.addEventListener("click", handleNav);
